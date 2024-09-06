@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.woff2") format("woff2"),
+      url("../fonts/Montserrat-Light.woff") format("woff");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    scroll-behavior: smooth;
+    font-family: Montserrat, sans-serif;
+  }
