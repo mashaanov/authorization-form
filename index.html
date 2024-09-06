@@ -8,21 +8,23 @@
       content="На этой странице отображен результат задания."
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer type="module" src="index.js"></script>
     <title>Form</title>
   </head>
   <body>
     <div class="form-container" role="dialog" aria-labelledby="form-title">
       <form action="#" method="post" class="form-content">
         <h2 class="form-name" id="form-title">Форма аутентификации</h2>
-        <label for="mail" class="sr-only">Почта<br /></label>
+        <label for="email" class="sr-only">Почта<br /></label>
         <input
           required
-          id="mail"
+          id="email"
           type="email"
           class="input-mail"
           placeholder="Введите вашу почту"
         />
         <br />
+        <div id="email-error" class="error-message"></div>
         <label for="password" class="sr-only">Пароль<br /></label>
         <input
           required
@@ -31,6 +33,7 @@
           class="input-password"
           placeholder="Введите пароль"
         />
+        <div id="password-error" class="error-message"></div>
         <br />
         <div id="form-message" class="form-message"></div>
         <button class="submit" type="submit">Отправить</button>
@@ -38,3 +41,4 @@
     </div>
   </body>
 </html>
+
