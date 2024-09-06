@@ -12,27 +12,27 @@
   </head>
   <body>
     <div class="form-container" role="dialog" aria-labelledby="form-title">
-      <span class="close-form">&times;</span>
       <form action="#" method="post" class="form-content">
         <h2 class="form-name" id="form-title">Форма аутентификации</h2>
         <label for="mail" class="sr-only">Почта<br /></label>
-        <input required id="mail" type="text" class="input-mail" />
+        <input
+          required
+          id="mail"
+          type="email"
+          class="input-mail"
+          placeholder="Введите вашу почту"
+        />
         <br />
         <label for="password" class="sr-only">Пароль<br /></label>
-        <input required id="password" type="text" class="input-password" />
+        <input
+          required
+          id="password"
+          type="password"
+          class="input-password"
+          placeholder="Введите пароль"
+        />
         <br />
         <div id="form-message" class="form-message"></div>
-        <div class="checkbox">
-          <input
-            id="agreement"
-            type="checkbox"
-            class="checkbox-input"
-            checked
-          />
-          <label for="agreement" class="sr-only checkbox-label">
-            Согласиться на обработку персональных данных
-          </label>
-        </div>
         <button class="submit" type="submit">Отправить</button>
       </form>
     </div>
